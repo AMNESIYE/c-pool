@@ -139,7 +139,7 @@ int my_parallelepiped(int x, int y, int z)
 {
     int back = (z - 2) + (y - 2) + 1;
 
-    if (x <= 0 || y <= 0 || z <= 0)
+    if (!(x > 0) || !(y > 0) || !(z > 0))
         return -1;
     if (x == 1 && y == 1 && z == 1) {
         my_putchar('*');
