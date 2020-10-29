@@ -39,6 +39,7 @@ $(NAME):	$(OBJ)
 		$(CC) -c $(CFLAG) $(SRC)
 		$(AR) -r $(NAME) $(OBJ)
 		rm ./*.o
+		mv ./libmy.a ./lib/
 
 all:		$(NAME)
 
